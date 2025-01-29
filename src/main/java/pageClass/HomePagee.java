@@ -27,7 +27,7 @@ public class HomePagee {
 	@FindBy(xpath = "(//a[@class='small-box-footer'])[9]")
 	private WebElement managenewsClick;
 	@FindBy(xpath = "(//a[@class='small-box-footer'])[3]")
-	private WebElement categoryClick;
+	private WebElement categoryclick;
 	@FindBy(xpath = "(//a[@class='small-box-footer'])[4]")
 	private WebElement subcategoryClick;
 
@@ -38,7 +38,7 @@ public class HomePagee {
 	}
 
 	public CategoryPage clickOnCategoryButton() {
-		categoryClick.click();
+		categoryclick.click();
 		return new CategoryPage(driver);
 
 	}

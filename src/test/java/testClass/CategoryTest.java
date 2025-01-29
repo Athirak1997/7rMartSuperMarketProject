@@ -27,7 +27,7 @@ public class CategoryTest extends Base {
 		home = login.clickOnSignInButton();
 		category = home.clickOnCategoryButton();
 		String categoryName = faker.getFakeFirstName();
-		category.clickOnNewButton().enterCategoryNameOnField(categoryName);
+		category.clickonNewButton().enterCategoryNameOnField(categoryName);
 		category.chooseFileClick().radioSelectOfTopMenu().radioSelectOfSideMenu().saveButtonClick();
 
 	}

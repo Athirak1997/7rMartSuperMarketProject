@@ -23,7 +23,7 @@ public class SubCategoryPage {
 	}
 
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")
-	private WebElement newSubCategoryClick;
+	private WebElement newSubcategoryClick;
 	@FindBy(xpath = "//select[@name='cat_id']")
 	private WebElement categorydropdown;
 	@FindBy(xpath = "//input[@type='text']")
@@ -47,7 +47,7 @@ public class SubCategoryPage {
 	private WebElement createsuccess;
 
 	public SubCategoryPage newClick() {
-		newSubCategoryClick.click();
+		newSubcategoryClick.click();
 		return this;
 	}
 

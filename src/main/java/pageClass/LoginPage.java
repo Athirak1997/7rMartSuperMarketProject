@@ -16,7 +16,7 @@ public class LoginPage {
 	}
 
 	@FindBy(name = "username")
-	private WebElement usernameField;
+	private WebElement userNameField;
 	@FindBy(name = "password")
 	private WebElement passwordField;
 	@FindBy(xpath = "//button[@type='submit']")
@@ -27,7 +27,7 @@ public class LoginPage {
 	private WebElement alert;
 
 	public LoginPage enterUsernameOnField(String username) {
-		usernameField.sendKeys(username);
+		userNameField.sendKeys(username);
 		return this;
 	}
 

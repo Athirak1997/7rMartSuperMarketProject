@@ -25,7 +25,7 @@ public class ManageNewsTest extends Base {
 		news = home.clickOnManageNews();
 		String newsValue = ExcelUtility.readStringData(4, 0, "LoginPage");
 		news.ClickOnNewButton().enterNewsOnField(newsValue).clickOnSaveButton();
-		boolean alertmessage = news.isAlertMessageDisplayed();
-		Assert.assertTrue(alertmessage, Constant.ERRORMESSAGEFORUNSUCESSFULNEWS);
+		boolean alertMessage = news.isAlertMessageDisplayed();
+		Assert.assertTrue(alertMessage, Constant.ERRORMESSAGEFORUNSUCESSFULNEWS);
 	}
 }

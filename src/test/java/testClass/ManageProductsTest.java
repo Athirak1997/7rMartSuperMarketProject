@@ -28,8 +28,8 @@ public class ManageProductsTest extends Base {
 		manage.searchClick().enterTitleOnTitleField(title)
 				.enterProductCodeOnField(productCode).selectCategoryDropdown().selectSubcategoryDropDown()
 				.clickOnSearchButton();
-		boolean imageIsDisplayed = manage.isImageDisplayed();
-		Assert.assertTrue(imageIsDisplayed, Constant.ERRORMESSAGEFORIVALIDPRODUCTSEARCH);
+		boolean imagesIsDisplayed = manage.isImageDisplayed();
+		Assert.assertTrue(imagesIsDisplayed, Constant.ERRORMESSAGEFORIVALIDPRODUCTSEARCH);
 	}
 
 }

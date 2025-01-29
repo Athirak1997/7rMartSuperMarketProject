@@ -44,8 +44,8 @@ public class LoginTest extends Base {
 		String password = ExcelUtility.readIntegerData(1, 1, "LoginPage");
 		login.enterUsernameOnField(username).enterPasswordOnField(password);
 		login.clickOnSignInButton();
-		boolean isAlertLoaded = login.isAlertDisplayed();
-		Assert.assertTrue(isAlertLoaded, Constant.ERRORMESSAGEFORINVALIDLOGIN);
+		boolean isAlertloaded = login.isAlertDisplayed();
+		Assert.assertTrue(isAlertloaded, Constant.ERRORMESSAGEFORINVALIDLOGIN);
 
 	}
 

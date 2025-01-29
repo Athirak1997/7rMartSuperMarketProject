@@ -20,9 +20,9 @@ public class HomeTest extends Base {
 		login.enterUsernameOnField(username).enterPasswordOnField(password);
 		home = login.clickOnSignInButton();
 		home.logout();
-		String expected = "Login | 7rmart supermarket";
+		String expectedTitle = "Login | 7rmart supermarket";
 		String actual = driver.getTitle();
-		Assert.assertEquals(expected, actual, "login failed");
+		Assert.assertEquals(expectedTitle, actual, "login failed");
 
 	}
 }

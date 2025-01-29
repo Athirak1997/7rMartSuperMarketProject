@@ -20,7 +20,7 @@ public class ManageNewsPage {
 	@FindBy(xpath = "//textarea[@name='news']")
 	private WebElement enterNews;
 	@FindBy(xpath = "//button[@type='submit']")
-	private WebElement saveButton;
+	private WebElement savebutton;
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement alertMessagee;
 
@@ -37,8 +37,8 @@ public class ManageNewsPage {
 
 	public ManageNewsPage clickOnSaveButton() {
 		WaitUtility wait = new WaitUtility();
-		wait.waitForElementOfclickOnSaveButtonOfManageNews(driver, saveButton);
-		saveButton.click();
+		wait.waitForElementOfclickOnSaveButtonOfManageNews(driver, savebutton);
+		savebutton.click();
 		return this;
 
 	}

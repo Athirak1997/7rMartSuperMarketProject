@@ -19,7 +19,7 @@ public class SubCategoryTest extends Base {
 	FakerUtilities faker = new FakerUtilities();
 
 	@Test
-	public void verifyUserIsAbleToCreateNewSubCategory() throws IOException, AWTException {
+	public void verifyUserIsAbletoCreateNewSubCategory() throws IOException, AWTException {
 		LoginPage login = new LoginPage(driver);
 		String username = ExcelUtility.readStringData(3, 0, "LoginPage");
 		String password = ExcelUtility.readStringData(3, 1, "LoginPage");

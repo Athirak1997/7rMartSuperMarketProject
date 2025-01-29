@@ -17,7 +17,7 @@ public class ManageProductsPage {
 	}
 
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']")
-	private WebElement searchClick;
+	private WebElement searchclick;
 	@FindBy(xpath = "(//input[@type='text'])[1]")
 	private WebElement title;
 	@FindBy(xpath = "(//input[@type='text'])[2]")
@@ -32,7 +32,7 @@ public class ManageProductsPage {
 	private WebElement resultnotfoundDisplay;
 
 	public ManageProductsPage searchClick() {
-		searchClick.click();
+		searchclick.click();
 		return this;
 
 	}
