@@ -37,7 +37,7 @@ public class LoginTest extends Base {
 
 	}
 
-	@Test
+	@Test(groups = {"smoke"})
 	public void verifyCorrectUsernameAndInvalidPassword() throws IOException {
 		LoginPage login = new LoginPage(driver);
 		String username = ExcelUtility.readStringData(1, 0, "LoginPage");
@@ -49,7 +49,7 @@ public class LoginTest extends Base {
 
 	}
 
-	@Test
+	@Test(groups = {"smoke"})
 	public void verifyInvalidUsernameAndPassword() throws IOException {
 		LoginPage login = new LoginPage(driver);
 		String username = ExcelUtility.readStringData(2, 0, "LoginPage");

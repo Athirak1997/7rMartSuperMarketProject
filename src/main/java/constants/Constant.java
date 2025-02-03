@@ -13,6 +13,7 @@ public class Constant {
 	public static final String ERRORMESSAGEFORINVALIDSUBCATEGORYSEARCH="invalid search";
 	public static final String TESTDATAFILE=System.getProperty("user.dir")+"//src//test//resources//Testdata.xlsx";
 	public static final String UPLOADFILEFORCATEGORY=System.getProperty("user.dir")+"//src//test//resources//category.jpg";
+	public static final String CONFIGFILE=System.getProperty("user.dir")+"//src//main//resources//config.properties";
 	
 	
 

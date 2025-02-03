@@ -15,7 +15,7 @@ public class ManageNewsTest extends Base {
 	ManageNewsPage news;
 	HomePagee home;
 
-	@Test
+	@Test(retryAnalyzer = retry.Retry.class)
 	public void verifyUserIsAbleToCreateNews() throws IOException {
 		LoginPage login = new LoginPage(driver);
 		String username = ExcelUtility.readStringData(3, 0, "LoginPage");

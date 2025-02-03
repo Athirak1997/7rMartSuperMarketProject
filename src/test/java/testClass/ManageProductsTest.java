@@ -25,9 +25,8 @@ public class ManageProductsTest extends Base {
 		manage = home.manageProductClick();
 		String title = ExcelUtility.readStringData(5, 0, "LoginPage");
 		String productCode = ExcelUtility.readStringData(5, 1, "LoginPage");
-		manage.searchClick().enterTitleOnTitleField(title)
-				.enterProductCodeOnField(productCode).selectCategoryDropdown().selectSubcategoryDropDown()
-				.clickOnSearchButton();
+		manage.searchClick().enterTitleOnTitleField(title).enterProductCodeOnField(productCode).selectCategoryDropdown()
+				.selectSubcategoryDropDown().clickOnSearchButton();
 		boolean imagesIsDisplayed = manage.isImageDisplayed();
 		Assert.assertTrue(imagesIsDisplayed, Constant.ERRORMESSAGEFORIVALIDPRODUCTSEARCH);
 	}
