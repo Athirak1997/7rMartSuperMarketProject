@@ -50,15 +50,11 @@ public class ManageProductsPage {
 
 	public ManageProductsPage selectCategoryDropdown() {
 		pageutility.selectCategory(categoryDropDown, 2);
-		// Select select=new Select(categoryDropDown);
-		// select.selectByIndex(2);
 		return this;
 	}
 
 	public ManageProductsPage selectSubcategoryDropDown() {
 		pageutility.selectSubCategory(subcategory, 2);
-		// Select select1=new Select(subcategory);
-		// select1.selectByIndex(2);
 		return this;
 	}
 

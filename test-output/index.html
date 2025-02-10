@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Grouping" class="navigator-link">
-              <span class="suite-name border-skipped">Grouping</span>
+            <a href="#" panel-name="suite-parallelTest" class="navigator-link">
+              <span class="suite-name border-failed">parallelTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Grouping" class="navigator-link ">
-                    <span>C:\Users\ATHIRA\eclipse-workspace\7rMartSuperMarket\grouping.xml</span>
+                  <a href="#" panel-name="test-xml-parallelTest" class="navigator-link ">
+                    <span>C:\Users\ATHIRA\eclipse-workspace\7rMartSuperMarket\parallelTesting.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="testlist-parallelTest" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="group-parallelTest" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="times-parallelTest" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="reporter-parallelTest" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-parallelTest" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="chronological-parallelTest" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,26 +92,60 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  2 skipped,  </span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Grouping" class="hide-methods skipped suite-Grouping"> (hide)</a> <!-- hide-methods skipped suite-Grouping -->
-                      <a href="#" panel-name="suite-Grouping" class="show-methods skipped suite-Grouping"> (show)</a> <!-- show-methods skipped suite-Grouping -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-parallelTest" class="hide-methods failed suite-parallelTest"> (hide)</a> <!-- hide-methods failed suite-parallelTest -->
+                      <a href="#" panel-name="suite-parallelTest" class="show-methods failed suite-parallelTest"> (show)</a> <!-- show-methods failed suite-parallelTest -->
                     </span>
-                    <div class="method-list-content skipped suite-Grouping">
+                    <div class="method-list-content failed suite-parallelTest">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Grouping" title="testClass.LoginTest" class="method navigator-link" hash-for-method="verifyCorrectUsernameAndInvalidPassword">verifyCorrectUsernameAndInvalidPassword</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-parallelTest" title="testClass.AdminUserTest" class="method navigator-link" hash-for-method="verifyValidsearchUser">verifyValidsearchUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-parallelTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-parallelTest" class="hide-methods passed suite-parallelTest"> (hide)</a> <!-- hide-methods passed suite-parallelTest -->
+                      <a href="#" panel-name="suite-parallelTest" class="show-methods passed suite-parallelTest"> (show)</a> <!-- show-methods passed suite-parallelTest -->
+                    </span>
+                    <div class="method-list-content passed suite-parallelTest">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-parallelTest" title="testClass.LoginTest" class="method navigator-link" hash-for-method="verifyCorrectUsernameAndInvalidPassword">verifyCorrectUsernameAndInvalidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Grouping" title="testClass.LoginTest" class="method navigator-link" hash-for-method="verifyInvalidUsernameAndPassword">verifyInvalidUsernameAndPassword</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-parallelTest" title="testClass.LoginTest" class="method navigator-link" hash-for-method="verifyCorrectUsernameAndPassword(admin, admin)">verifyCorrectUsernameAndPassword(admin, admin)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Grouping -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-parallelTest" title="testClass.LoginTest" class="method navigator-link" hash-for-method="verifyInvalidUsernameAndCorrectPassword(admins, admin)">verifyInvalidUsernameAndCorrectPassword(admins, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-parallelTest" title="testClass.LoginTest" class="method navigator-link" hash-for-method="verifyInvalidUsernameAndPassword">verifyInvalidUsernameAndPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-parallelTest" title="testClass.AdminUserTest" class="method navigator-link" hash-for-method="verifyUserAbleToEditUserDetails">verifyUserAbleToEditUserDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-parallelTest" title="testClass.AdminUserTest" class="method navigator-link" hash-for-method="verifynewAdminUserCreation">verifynewAdminUserCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-parallelTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,10 +156,55 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Grouping" class="panel Grouping">
-          <div class="suite-Grouping-class-skipped">
+        <div panel-name="suite-parallelTest" class="panel parallelTest">
+          <div class="suite-parallelTest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">testClass.AdminUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidsearchUser">
+                  </a> <!-- verifyValidsearchUser -->
+                  <span class="method-name">verifyValidsearchUser</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Active&apos;]&quot;}
+  (Session info: chrome=132.0.6834.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0c1ba9f9c65dd8f339b1366548a2c701, findElement {value=//span[text()=&apos;Active&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\ATHIRA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54021}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54021/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c1ba9f9c65dd8f339b1366548a2c701
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+	at pageClass.AdminUsersPage.isStatusDisplayed(AdminUsersPage.java:139)
+	at testClass.AdminUserTest.verifyValidsearchUser(AdminUserTest.java:47)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-parallelTest-class-failed -->
+          <div class="suite-parallelTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">testClass.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -134,29 +213,22 @@
                   <a name="verifyCorrectUsernameAndInvalidPassword">
                   </a> <!-- verifyCorrectUsernameAndInvalidPassword -->
                   <span class="method-name">verifyCorrectUsernameAndInvalidPassword</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=132.0.6834.160)
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f836769d549d615a95dc6a343cf7b8ff, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\ATHIRA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64538}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64538/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f836769d549d615a95dc6a343cf7b8ff
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
-	at testClass.Base.beforeMethod(Base.java:50)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCorrectUsernameAndPassword(admin, admin)">
+                  </a> <!-- verifyCorrectUsernameAndPassword(admin, admin) -->
+                  <span class="method-name">verifyCorrectUsernameAndPassword</span>
+                  <span class="parameters">(admin,admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidUsernameAndCorrectPassword(admins, admin)">
+                  </a> <!-- verifyInvalidUsernameAndCorrectPassword(admins, admin) -->
+                  <span class="method-name">verifyInvalidUsernameAndCorrectPassword</span>
+                  <span class="parameters">(admins,admin)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -164,73 +236,70 @@ Session ID: f836769d549d615a95dc6a343cf7b8ff
                   <a name="verifyInvalidUsernameAndPassword">
                   </a> <!-- verifyInvalidUsernameAndPassword -->
                   <span class="method-name">verifyInvalidUsernameAndPassword</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=132.0.6834.160)
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f836769d549d615a95dc6a343cf7b8ff, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\ATHIRA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64538}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64538/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f836769d549d615a95dc6a343cf7b8ff
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
-	at testClass.Base.beforeMethod(Base.java:50)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Grouping-class-skipped -->
-        </div> <!-- panel Grouping -->
-        <div panel-name="test-xml-Grouping" class="panel">
+          </div> <!-- suite-parallelTest-class-passed -->
+          <div class="suite-parallelTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testClass.AdminUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserAbleToEditUserDetails">
+                  </a> <!-- verifyUserAbleToEditUserDetails -->
+                  <span class="method-name">verifyUserAbleToEditUserDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifynewAdminUserCreation">
+                  </a> <!-- verifynewAdminUserCreation -->
+                  <span class="method-name">verifynewAdminUserCreation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-parallelTest-class-passed -->
+        </div> <!-- panel parallelTest -->
+        <div panel-name="test-xml-parallelTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ATHIRA\eclipse-workspace\7rMartSuperMarket\grouping.xml</span>
+            <span class="header-content">C:\Users\ATHIRA\eclipse-workspace\7rMartSuperMarket\parallelTesting.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Grouping&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite parallel=&quot;classes&quot; name=&quot;parallelTest&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;browzer&quot; value=&quot;chrome&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;grouping.xml&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;smoke&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
+  &lt;parameter name=&quot;password&quot; value=&quot;admin&quot;/&gt;
+  &lt;parameter name=&quot;username&quot; value=&quot;admins&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testClass.LoginTest&quot;/&gt;
+      &lt;class name=&quot;testClass.AdminUserTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- grouping.xml --&gt;
-&lt;/suite&gt; &lt;!-- Grouping --&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+&lt;/suite&gt; &lt;!-- parallelTest --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Grouping" class="panel">
+        <div panel-name="testlist-parallelTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Grouping</span>
+            <span class="header-content">Tests for parallelTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">grouping.xml (1 class)</span>
+                <span class="test-name">ChromeTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Grouping" class="panel">
+        <div panel-name="group-parallelTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Grouping</span>
+            <span class="header-content">Groups for parallelTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -247,79 +316,190 @@ Session ID: f836769d549d615a95dc6a343cf7b8ff
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Grouping" class="panel">
+        <div panel-name="times-parallelTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Grouping</span>
+            <span class="header-content">Times for parallelTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Grouping');
-function tableData_Grouping() {
+suiteTableInitFunctions.push('tableData_parallelTest');
+function tableData_parallelTest() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyInvalidUsernameAndPassword')
-data.setCell(0, 2, 'testClass.LoginTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'verifyValidsearchUser')
+data.setCell(0, 2, 'testClass.AdminUserTest')
+data.setCell(0, 3, 25165);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyCorrectUsernameAndInvalidPassword')
-data.setCell(1, 2, 'testClass.LoginTest')
-data.setCell(1, 3, 0);
-window.suiteTableData['Grouping']= { tableData: data, tableDiv: 'times-div-Grouping'}
+data.setCell(1, 1, 'verifyUserAbleToEditUserDetails')
+data.setCell(1, 2, 'testClass.AdminUserTest')
+data.setCell(1, 3, 5292);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifynewAdminUserCreation')
+data.setCell(2, 2, 'testClass.AdminUserTest')
+data.setCell(2, 3, 3937);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyCorrectUsernameAndInvalidPassword')
+data.setCell(3, 2, 'testClass.LoginTest')
+data.setCell(3, 3, 2902);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyCorrectUsernameAndPassword')
+data.setCell(4, 2, 'testClass.LoginTest')
+data.setCell(4, 3, 1887);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyInvalidUsernameAndPassword')
+data.setCell(5, 2, 'testClass.LoginTest')
+data.setCell(5, 3, 1039);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyInvalidUsernameAndCorrectPassword')
+data.setCell(6, 2, 'testClass.LoginTest')
+data.setCell(6, 3, 1027);
+window.suiteTableData['parallelTest']= { tableData: data, tableDiv: 'times-div-parallelTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
-              <div id="times-div-Grouping">
-              </div> <!-- times-div-Grouping -->
+              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <div id="times-div-parallelTest">
+              </div> <!-- times-div-parallelTest -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Grouping" class="panel">
+        <div panel-name="reporter-parallelTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Grouping</span>
+            <span class="header-content">Reporter output for parallelTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Grouping" class="panel">
+        <div panel-name="ignored-methods-parallelTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testClass.LoginTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyInvalidUsernameAndCorrectPassword</span>
-                <br/>
-                <span class="ignored-method-name">verifyCorrectUsernameAndPassword</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Grouping" class="panel">
+        <div panel-name="chronological-parallelTest" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testClass.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testClass.AdminUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">beforeMethod(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClass.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">30691 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClass.AdminUserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyUserAbleToEditUserDetails</span>
+                <span class="method-start">6721 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClass.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyCorrectUsernameAndInvalidPassword</span>
+                <span class="method-start">7579 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyCorrectUsernameAndInvalidPassword status=SUCCESS method=LoginTest.verifyCorre...)</span>
+                <span class="method-start">10483 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">11290 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClass.AdminUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyUserAbleToEditUserDetails status=SUCCESS method=AdminUserTest.verifyUserAbleT...)</span>
+                <span class="method-start">12015 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">12823 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClass.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyCorrectUsernameAndPassword(admin, admin)</span>
+                <span class="method-start">14568 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClass.AdminUserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyValidsearchUser</span>
+                <span class="method-start">15418 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClass.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyCorrectUsernameAndPassword status=SUCCESS method=LoginTest.verifyCorrectUsern...)</span>
+                <span class="method-start">16457 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">16876 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidUsernameAndCorrectPassword(admins, admin)</span>
+                <span class="method-start">19040 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyInvalidUsernameAndCorrectPassword status=SUCCESS method=LoginTest.verifyInval...)</span>
+                <span class="method-start">20068 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">20602 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidUsernameAndPassword</span>
+                <span class="method-start">22818 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyInvalidUsernameAndPassword status=SUCCESS method=LoginTest.verifyInvalidUsern...)</span>
+                <span class="method-start">23865 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClass.AdminUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyValidsearchUser status=FAILURE method=AdminUserTest.verifyValidsearchUser()[p...)</span>
+                <span class="method-start">40586 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">41004 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifynewAdminUserCreation</span>
+                <span class="method-start">43114 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifynewAdminUserCreation status=SUCCESS method=AdminUserTest.verifynewAdminUserCr...)</span>
+                <span class="method-start">47052 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

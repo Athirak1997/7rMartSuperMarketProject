@@ -18,7 +18,7 @@ public class CategoryTest extends Base {
 	CategoryPage category;
 	FakerUtilities faker = new FakerUtilities();
 
-	@Test()
+	@Test
 	public void verifyNewCategoryCreation() throws IOException, AWTException {
 		LoginPage login = new LoginPage(driver);
 		String username = ExcelUtility.readStringData(3, 0, "LoginPage");
@@ -29,7 +29,8 @@ public class CategoryTest extends Base {
 		String categoryName = faker.getFakeFirstName();
 		category.clickonNewButton().enterCategoryNameOnField(categoryName);
 		category.chooseFileClick().radioSelectOfTopMenu().radioSelectOfSideMenu().saveButtonClick();
-
+		boolean Message = category.isDeleteSuccessfulMessageDisplayed();
+		Assert.assertTrue(Message, Constant.ERRORMESSAGEFORUNSUCESSFULNEWS);
 	}
 
 	@Test

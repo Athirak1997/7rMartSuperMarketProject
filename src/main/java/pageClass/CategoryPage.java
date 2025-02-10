@@ -53,7 +53,6 @@ public class CategoryPage {
 		wait.waitForElementToClick(driver, chooseFile);
 		FileUploadUtility file = new FileUploadUtility();
 		file.roboKeysForFileUpload(chooseFile, Constant.UPLOADFILEFORCATEGORY);
-		// chooseFile.click();
 		return this;
 	}
 

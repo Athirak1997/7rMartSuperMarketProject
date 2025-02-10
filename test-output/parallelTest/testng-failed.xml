@@ -10,17 +10,9 @@
         <methods>
           <include name="verifyValidsearchUser"/>
           <include name="beforeMethod"/>
-          <include name="verifyUserAbleToEditUserDetails"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- testClass.AdminUserTest -->
-      <class name="testClass.LoginTest">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="verifyCorrectUsernameAndInvalidPassword"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- testClass.LoginTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [parallelTest] -->

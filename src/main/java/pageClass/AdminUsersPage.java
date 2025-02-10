@@ -50,7 +50,6 @@ public class AdminUsersPage {
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	private WebElement editSuccessMessage;
 
-//user creation
 	public AdminUsersPage newClick() {
 		newUserClick.click();
 		return this;
@@ -80,7 +79,6 @@ public class AdminUsersPage {
 
 	}
 
-//user search
 	public AdminUsersPage clickOnSearchButton() {
 		searchButton.click();
 		return this;
@@ -105,7 +103,6 @@ public class AdminUsersPage {
 		return this;
 	}
 
-	// user edit details
 	public AdminUsersPage clickOnEditButton() {
 		editButton.click();
 		return this;
